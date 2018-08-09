@@ -1,0 +1,31 @@
+<div id="book-register-section" ng-controller="RegisterBookController">
+	<form ng-submit="registerBook()">
+		<table align="center">
+			<caption>Book Registration</caption>
+			<tr>
+				<td>Book Name:</td>
+				<td><input type="text" name="bookName" ng-model="bookName" required="required"></td>
+			</tr>
+			<tr>
+				<td>Book Author:</td>
+				<td><input type="text" name="bookAuthor" ng-model="bookAuthor" required="required"></td>
+			</tr>
+			<tr>
+				<td>Book Category:</td>
+				<td><input type="text" name="bookCategory" ng-model="bookCategory" required="required"></td>
+			</tr>
+			<tr>
+				<td>Book Pages:</td>
+				<td><input type="number" name="bookPages" ng-model="bookPages" required="required"></td>
+			</tr>
+			<tr>
+				<td>Book Language:</td>
+				<td><input type="text" name="bookLanguage" ng-model="bookLanguage" required="required"></td>
+			</tr>
+			<tr>
+				<td><input type="reset" value="Reset"></td>
+				<td><input type="submit" value="Add Book"></td>
+			</tr>
+		</table>
+	</form>
+</div>

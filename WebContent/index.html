@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bookApp">
+<head>
+
+	<meta charset="ISO-8859-1">
+	<meta charset="utf-8">
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<title>Book Management System</title>
+	
+	<!-- CSS -->
+	<link href="css/index.css" rel="stylesheet">
+	
+	<!-- Java Script -->
+	<script type="text/javascript" src="assets/angularJS/angular.min.js"></script>
+	<script type="text/javascript"src="assets/angularJS/angular-route.min.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+</head>
+<body>
+	<header>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#!viewAllBooks">View All Books</a></li>
+			<li><a href="#!bookRegistration">Create Book</a></li>
+		</ul>
+	</header>
+	<section ng-view>
+	</section>
+	<footer>
+		<h3>Copyright &copy; TVM05 TJA19 Darshan Bangoria</h3>
+	</footer>
+</body>
+</html>

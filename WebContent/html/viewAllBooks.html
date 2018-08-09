@@ -1,0 +1,30 @@
+<div id="book-section" ng-controller="ViewAllBookController"> 
+	<div ng-if="books.length!=0">
+		<table border="1" align="center">
+			<caption>Book Details</caption>
+			<tr>
+				<th>Book ID</th>
+				<th>Book Name</th>
+				<th>Book Author</th>
+				<th>Book Category</th>
+				<th>Book Pages</th>
+				<th>Book Language</th>
+				<th>Update</th>
+				<th>Delete</th>
+			</tr>
+			<tr ng-repeat="book in books">
+				<td>{{book.bookId}}</td>
+				<td>{{book.bookName}}</td>
+				<td>{{book.bookAuthor}}</td>
+				<td>{{book.bookCategory}}</td>
+				<td>{{book.bookPages}}</td>
+				<td>{{book.bookLanguage}}</td>
+				<td><a href="#!updateBook/{{book.bookId}}" id="update-operation">Update</a></td>
+				<td><a href="#!deleteBook/{{book.bookId}}" id="delete-operation">Delete</a></td>
+			</tr>
+		</table>
+	</div>
+	<div ng-if="books.length==0">
+		No records found.
+	</div>
+</div>

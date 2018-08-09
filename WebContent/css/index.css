@@ -1,0 +1,97 @@
+header {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	background: black;
+}
+
+footer {
+	position: fixed;
+	bottom: 0px;
+	text-align: center;
+	width: 100%;
+	background: black;
+	color: white;
+}
+
+body{
+	font-family: sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+section{
+	width: 100%;
+	margin-top: 4rem;
+}
+
+ul {
+	list-style: none;
+}
+
+ul li{
+	display: inline-block;
+	padding-right: 1rem;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.2rem;
+}
+
+#home-section {
+	font-size: 4rem;
+	margin-top: 17%;
+	text-align: center;
+	padding: 3rem;
+	background: #d9d9d9;
+	border: 3px solid black;
+	border-radius: 10px;
+	margin-left: 10rem;
+	margin-right: 10rem;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+table td, th{
+	padding: 0.5rem;
+}
+
+#update-operation{
+	display: block;
+	background: #27b7be;
+	padding: 0.3rem;
+	font-size: 85%;
+	border: 1px solid #000;
+	border-radius: 5px; 
+}
+
+#delete-operation{
+	display: block;
+	background: #d85643;
+	padding: 0.3rem;
+	font-size: 85%;
+	border: 1px solid #000;
+	border-radius: 5px;
+}
+
+caption {
+	font-size: 1.5rem;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+
+#success-section {
+	text-align: center;
+    margin-top: 17%;
+    font-size: 2.3rem;
+}
+
+#error-section {
+	text-align: center;
+    margin-top: 17%;
+    font-size: 2.3rem;
+}

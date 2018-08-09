@@ -1,0 +1,35 @@
+<div id="book-delete-section" ng-controller="DeleteBookController">
+	<form ng-submit="deleteBook(bookId)">
+		<table align="center">
+			<caption>Book Details</caption>
+			<tr>
+				<td>Book Id:</td>
+				<td><input type="number" name="bookId" ng-model="bookId" readonly="readonly"></td>
+			</tr>
+			<tr>
+				<td>Book Name:</td>
+				<td><input type="text" name="bookName" ng-model="bookName" readonly="readonly"></td>
+			</tr>
+			<tr>
+				<td>Book Author:</td>
+				<td><input type="text" name="bookAuthor" ng-model="bookAuthor" readonly="readonly"></td>
+			</tr>
+			<tr>
+				<td>Book Category:</td>
+				<td><input type="text" name="bookCategory" ng-model="bookCategory" readonly="readonly"></td>
+			</tr>
+			<tr>
+				<td>Book Pages:</td>
+				<td><input type="number" name="bookPages" ng-model="bookPages" readonly="readonly"></td>
+			</tr>
+			<tr>
+				<td>Book Language:</td>
+				<td><input type="text" name="bookLanguage" ng-model="bookLanguage" readonly="readonly"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Delete Book"></td>
+			</tr>
+		</table>
+	</form>
+</div>
